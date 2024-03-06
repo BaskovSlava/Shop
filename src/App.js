@@ -1,8 +1,15 @@
+import { Route, Routes } from 'react-router-dom';
+
+import Home from './pages/Home';
+
 import './sass/app.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </div>
   );
 }

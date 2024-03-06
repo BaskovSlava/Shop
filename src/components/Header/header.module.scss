@@ -1,0 +1,51 @@
+@import '../../sass/components/variabals.scss';
+
+.container {
+  width: 100%;
+  height: 54px;
+  background: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  @media screen and (max-width: 390px) {
+    display: none;
+  }
+  .location {
+    display: flex;
+    align-items: center;
+    span {
+      color: $blue-fonts-color;
+      font-weight: 500;
+      font-size: 11px;
+    }
+
+    .map_icon {
+      color: $blue-fonts-color;
+      font-size: 13px;
+    }
+  }
+
+  .pages {
+    display: flex;
+
+    p {
+      display: block;
+      color: $header-fonts-color;
+      padding: 5px;
+    }
+  }
+  .theme {
+    display: flex;
+    align-items: center;
+
+    .sun_icon {
+      color: $sun-color;
+    }
+    span {
+      color: $sun-color;
+      font-size: 11.44px;
+      padding: 5px;
+    }
+  }
+}
