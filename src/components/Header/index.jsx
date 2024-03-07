@@ -1,29 +1,30 @@
 import { Link } from 'react-router-dom';
 
 import styles from './header.module.scss';
+
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdSunny } from "react-icons/md";
 
 const Header = () => {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <div className={styles.location}>
-        <FaMapMarkerAlt className={styles.map_icon}/>
-        <span>Минск</span>
+        <FaMapMarkerAlt className={styles.location_map_icon}/>
+        <span className={styles.location_city}>Минск</span>
       </div>
-      <div className={styles.pages}>
-        <Link to='/signin'><p>Войти</p></Link>
-        <Link to='manage'><p>Управление магазином</p></Link>
-        <Link to='novetly'><p>Новинки</p></Link>
-        <Link to='supliers'><p>Для поставщиков</p></Link>
-        <Link to='contest'><p>О конкурсе</p></Link>
-        <Link to='support'><p>Поддержка</p></Link>
-      </div>
+      <nav className={styles.nav}>
+        <Link to='/signin'><p className={styles.nav_element}>Войти</p></Link>
+        <Link to='/manage'><p className={styles.nav_element}>Управление магазином</p></Link>
+        <Link to='/novetly'><p className={styles.nav_element}>Новинки</p></Link>
+        <Link to='/supliers'><p className={styles.nav_element}>Для поставщиков</p></Link>
+        <Link to='/contest'><p className={styles.nav_element}>О конкурсе</p></Link>
+        <Link to='/support'><p className={styles.nav_element}>Поддержка</p></Link>
+      </nav>
       <div className={styles.theme}>
-        <MdSunny className={styles.sun_icon}/>
-        <span>Светлая</span>
+        <MdSunny className={styles.theme_sun_icon}/>
+        <span className={styles.theme_color}>Светлая</span>
       </div>
-    </div>
+    </header>
   )
 }
 

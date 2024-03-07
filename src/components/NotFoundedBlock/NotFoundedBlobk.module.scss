@@ -1,0 +1,42 @@
+@import '../../sass/components/variabals.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $main-fonts-color;
+  font-size: 24px;
+  font-weight: 700;
+
+  @media screen and (max-width: $medium-small-container) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: $medium-container) {
+    padding: 2% 15%;
+  }
+
+  .error_image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .error_text {
+    &_return {
+      color: $blue-fonts-color;
+      text-decoration: underline;
+      font-weight: 700;
+
+      &:hover {
+        color: $blue-fonts-color;
+      }
+
+      &:active {
+        color: $header-fonts-color;
+      }
+
+    }
+  }
+}
