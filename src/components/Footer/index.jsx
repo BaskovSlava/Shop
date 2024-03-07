@@ -24,37 +24,37 @@ const Footer = () => {
       <div className={classNames(styles.item, styles.item_2)}>
         <h2>Сайт</h2>
         <p>
-          <Link href="">Для поставщиков</Link>
+          <Link to=''>Для поставщиков</Link>
         </p>
         <p>
-          <Link href="">Помощь</Link>
+          <Link to=''>Помощь</Link>
         </p>
       </div>
       <div className={classNames(styles.item, styles.item_3)}>
         <h2>Информация</h2>
         <p>
-          <Link href="">Пользовательское соглашение</Link>
+          <Link to=''>Пользовательское соглашение</Link>
         </p>
         <p>
-          <Link href="">Политика обработки персональных данных</Link>
+          <Link to=''>Политика обработки персональных данных</Link>
         </p>
         <p>
-          <Link href="">Контент</Link>
+          <Link to=''>Контент</Link>
         </p>
       </div>
       <div className={classNames(styles.item, styles.item_3)}>
         <h2>Подпишитесь на наш канал в Telegram</h2>
         <p>
-          <Link href="">Чтобы быть в курсе всех акций и скидок</Link>
+          <Link to=''>Чтобы быть в курсе всех акций и скидок</Link>
         </p>
         <div className={styles.buttonTg}>
           <p className={styles.buttonTgColorText}> Перейти в Telegram </p>
         </div>
       </div>
       <div className={classNames(styles.item, styles.item_3)}>
-          <div className="socialNetworks"><Link href=""></Link></div>
-          <div className="socialNetworks"><Link href=""></Link></div>
-          <div className="socialNetworks"><Link href=""></Link></div>
+          <div className="socialNetworks"><Link to=''><img src="" alt="" /></Link></div>
+          <div className="socialNetworks"><Link to=''><img src="" alt="" /></Link></div>
+          <div className="socialNetworks"><Link to=''><img src="" alt="" /></Link></div>
         <div className={styles.buttonTg}>
           <p className={styles.buttonTgColorText}> Перейти в Telegram </p>
         </div>
