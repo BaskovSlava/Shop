@@ -1,0 +1,165 @@
+@import '../../sass/components/variabals.scss';
+
+.container {
+  width: 100%;
+  height: 64px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $searching-string-color;
+
+  @media screen and (min-width: $large-small-container) {
+    padding: 10px 250px;
+  }
+
+  .category {
+    background: $category-bg-color;
+    padding: 6px;
+    border-radius: 12px;
+
+    @media screen and (max-width: $medium-small-container) {
+      display: none;
+    }
+
+    &:hover {
+      background: $category-bg-color-hover;
+    }
+
+    &_icon {
+      font-size: 25px;
+      color: $blue-fonts-color;
+    }
+  }
+
+  .logo {
+    @media screen and (max-width: $medium-small-container) {
+      display: none;
+    }
+
+    &_image {
+      display: block;
+      margin: 0 auto;
+      width: 64px;
+    }
+  }
+
+  .search_container {
+    width: 70%;
+    height: 100%;
+    border-radius: 12px;
+    background: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+
+    @media screen and (max-width: $medium-small-container) {
+      width: 100%;
+    }
+
+    .everywhere {
+      background: $searching-string-color;
+      padding: 9px;
+      width: 115px;
+      border-radius: 8px;
+      margin-right: 2px;
+      position: relative;
+      color: $blue-fonts-color;
+      display: flex;
+      align-items: center;
+
+      &:after {
+        content: '^';
+        right: 10px;
+        position: absolute;
+        transform: rotate(90deg);
+      }
+
+      .search_logo {
+        display: block;
+        margin-right: 2px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+
+      @media screen and (max-width: $medium-small-container) {
+        display: none;
+      }
+    }
+
+    .search {
+      margin: 0 auto;
+      border-radius: 12px;
+      background: $bg-color;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &_line {
+        width: 80%;
+        height: 90%;
+        padding: 2px;
+        background: $bg-color;
+      }
+
+      &_button {
+        color: $button-color;
+        font-size: 20px;
+        background: $searching-string-color;
+        padding: 7px;
+        border-radius: 8px;
+      }
+
+      &_reset {
+        background: $bg-color;
+        margin-left: 3px;
+        opacity: 0;
+      }
+
+      &_sublogo {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: $medium-small-container) {
+      width: 100%;
+      .search {
+        width: 100%;
+        &_sublogo {
+          display: block;
+          height: 90%;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &_settings {
+    width: 15%;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $medium-small-container) {
+      display: none;
+    }
+
+    .icon_container {
+      margin-right: 5px;
+      padding: 5px;
+      border: 1px solid #EAECF8;
+      border-radius: 12px;
+
+      &:hover {
+        border-color: $blue-fonts-color;
+      }
+
+      .icon {
+        font-size: 25px;
+      }
+    }
+  }
+}
