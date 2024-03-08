@@ -1,0 +1,32 @@
+@import '../../sass/components/variabals.scss';
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 24px;
+  background: $popular-categories-color;
+  border-radius: 16px;
+
+  .categories_image {
+    width: 90px;
+    height: 90px;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 2px 2px $header-fonts-color;
+    margin: 0 auto;
+    transition: .3s;
+    &:hover {
+      transform: translateY(-10px) scale(1.05);
+      position: relative;
+    }
+  }
+
+  .categories_name {
+    color: $header-fonts-color;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 22.86px;
+    margin-top: 15px;
+  }
+}

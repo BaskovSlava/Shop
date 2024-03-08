@@ -1,0 +1,28 @@
+@import '../../sass/components/variabals.scss';
+
+.popular_categories_container {
+  padding: 30px 0;
+  .categories_container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 0px;
+
+    @media screen and (max-width: $medium-small-container) {
+      overflow-y: scroll;
+    }
+  }
+
+  .popular_categories {
+    color: $name-of-products-fonts-color;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+    
+}
